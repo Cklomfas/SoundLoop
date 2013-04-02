@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/project_name"
+        android:text="@string/bRecord" />
+
+    <Button
+        android:id="@+id/bPlayback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bRecord"
+        android:text="@string/bPlayback" />
+
+    <TextView
+        android:id="@+id/tvLoopLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tbLoop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tbLoop"
+        android:text="@string/tvLoopLabel"
+        android:textSize="20sp" />
+
+    <ToggleButton
+        android:id="@+id/tbLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bPlayback"
+        android:layout_toRightOf="@+id/tvLoopLabel"
+        android:text="@string/tbLoop" />
+
+    <TextView
+        android:id="@+id/tvRecordCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bRecord"
+        android:layout_toRightOf="@+id/bRecord"
+        android:text="@string/tvCounterDefault"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPlaybackCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bRecord"
+        android:layout_toRightOf="@+id/bPlayback"
+        android:text="@string/tvCounterDefault"
+        android:textSize="20sp" />
+
+</RelativeLayout>

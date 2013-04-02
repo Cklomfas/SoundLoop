@@ -1,0 +1,39 @@
+Research notes
+covercash
+
+
+tasks:
+implement a playback loop function.
+record until stopped.
+playback until stopped.
+
+
+RECORD:
+Enqueue more buffers for recording. this is done in the callback method.
+
+Things to research:
+-ActionMode.Callback
+---Callback/callbacks
+* callbacks are registered with OpenSL objects to be called when a buffer is 
+cleared. I need to make sure that I keep track of the number of buffers for
+recording/playback reasons. E.g. playback will need to know where the next 
+buffer is so it can play it. Same with record. *
+---ActionMode
+
+-Menu/menus 
+---context menus
+
+
+
+URLs:
+Android development: menus
+---http://developer.android.com/guide/topics/ui/menus.html#CAB
+
+new boston tutorial videos
+---
+
+I think death is least funny when it happens to a child.
+
+april 2 1:20-
+i've managed to record two buffers but cannot seem to play them back properly.
+try creating a universal second buffer?
